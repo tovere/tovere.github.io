@@ -1,59 +1,153 @@
-
-/* 首页专辑列表 */
-.music_content{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 10px;
-}
-.music_item_div{
-  margin: auto;
-}
-.music_content .music_item_div .music_img{
-  width: 300px;
+/* Reset */
+body, h1, h2, h3, p, a {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  position: relative;
 }
-.music_content .music_item_div .music_img .music_hover_div{
-  position: absolute;
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f3f4f6;
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 20px 0;
+  position: sticky;
   top: 0;
-  left: 0;
-  width: 300px;
-  height: 300px;
-  display: none;
-  border: 2px solid #ccc;
-
-
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.music_content .music_item_div .music_img:hover .music_hover_div{
-  display: block;
-}
-.music_content .music_item_div .music_img>img{
-  width: 300px;
-  height: 300px;
-}
-
-.music_content .music_text p:last-child{
-  border-top: 1px solid #000;
-  
-}
-.music_content .music_text p:first-child{
-  margin-bottom: 10px;
+.header .logo {
+  font-size: 28px;
   font-weight: bold;
-  
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
-.container_title{
-  text-align: center;
-  margin-top: 10px;
+.nav {
+  text-align: right;
 }
-.container_title p{
-   font-size: 20px;
-   font-weight: bold;
+.nav a {
+  margin: 0 15px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s;
 }
-.container_title>div{
-  width: 100px;
-  height: 1px;
-  border-bottom: 1px solid #000;
-  margin: auto;
+.nav a:hover {
+  color: #ffd700;
 }
 
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 0;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: white;
+}
+.hero h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.hero .btn {
+  background: white;
+  color: #ff6f61;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background 0.3s, color 0.3s;
+}
+.hero .btn:hover {
+  background: #ff6f61;
+  color: white;
+}
+
+/* About Section */
+.about {
+  padding: 50px 20px;
+  background: #fefefe;
+  text-align: center;
+}
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.about p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Posts Section */
+.posts {
+  padding: 50px 20px;
+}
+.posts h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.post {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.post:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.post h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+.post p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+.post a {
+  font-size: 16px;
+  color: #2575fc;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+.post a:hover {
+  color: #6a11cb;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 15px 0;
+  background: #333;
+  color: white;
+  font-size: 14px;
+}
