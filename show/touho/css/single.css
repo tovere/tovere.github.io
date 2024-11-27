@@ -1,0 +1,175 @@
+/* 详情页 */
+.single_content {
+    display: flex;
+    padding: 30px 0px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+
+}
+/* 专辑图片和制作信息列 */
+.single_album {
+    padding-right: 5px;
+    padding-bottom: 20px;
+
+}
+
+/* .single_album .single_album_img {
+    width: 400px;
+} */
+
+.single_album .single_album_img img {
+    width: 100%;
+}
+
+.single_album .album_name div:first-child {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.single_album .icon {
+    display: flex;
+    margin-top: 10px;
+}
+
+.single_album .icon div {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 0px 3px 1px 3px;
+    margin-right: 20px;
+
+}
+
+.single_album .icon div img {
+    width: 20px;
+
+}
+
+.introduction {
+    margin-top: 30px;
+    font-size: 0.85rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.introduction .shop {
+    margin-top: 5px;
+}
+
+.introduction .shop img {
+    width: 150px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.Production_staff {
+    font-size: 0.85rem;
+
+}
+
+/* 歌曲列表列 */
+.Production_staff_title,
+.other_works {
+    margin-top: 10px;
+    border-left: 3px solid #666;
+    padding-left: 10px;
+}
+
+.poster {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.poster img {
+    width: 100%;
+}
+
+.music_list {
+    padding: 0px 10px;
+    border-left: 1px dotted #ccc;
+    border-right: 1px dotted #ccc;
+    width: 100%;
+    margin-bottom: 20px;
+    /* flex: 2; */
+}
+
+.music_list table tr {
+    border-bottom: 1px solid #ccc;
+}
+
+.music_list table tr td {
+    padding: 5px 0px;
+}
+
+.music_list table tr:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+.comment{
+    padding-top: 10px;
+}
+.comment_item {
+    display: flex;
+   
+    
+}
+
+.comment_item .comment_img {
+    width: 50px;
+}
+
+.comment_item .comment_img img {
+    width: 100%;
+}
+.comment_item .name{
+    color: #3498db;
+}
+.comment_item .text{
+    padding-left: 10px;
+}
+
+
+/* 社团介绍列 */
+.association {
+    /* flex: 1; */
+    padding-left: 5px;
+    width: 80%;
+}
+
+.association_logo {
+    width: 70%;
+}
+
+.association_logo img {
+    width: 100%;
+    text-align: center;
+}
+
+.association_text {
+    padding-top: 10px;
+}
+
+.other {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin: 10px auto 0px;
+
+}
+
+.other>div {
+    flex: 2;
+    width: 100%;
+    padding-right: 10px;
+
+}
+
+.other .orther_img {
+    min-width: 80px;
+    cursor: pointer;
+
+}
+
+.other .orther_img img {
+    width: 100%;
+}
