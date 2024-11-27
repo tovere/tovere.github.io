@@ -1,0 +1,59 @@
+
+/* 首页专辑列表 */
+.music_content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.music_item_div{
+    margin: auto;
+}
+.music_content .music_item_div .music_img{
+    width: 300px;
+    box-sizing: border-box;
+    position: relative;
+}
+.music_content .music_item_div .music_img .music_hover_div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    display: none;
+    border: 2px solid #ccc;
+
+
+}
+.music_content .music_item_div .music_img:hover .music_hover_div{
+    display: block;
+}
+.music_content .music_item_div .music_img>img{
+    width: 300px;
+    height: 300px;
+}
+
+.music_content .music_text p:last-child{
+    border-top: 1px solid #000;
+    
+}
+.music_content .music_text p:first-child{
+    margin-bottom: 10px;
+    font-weight: bold;
+    
+}
+.container_title{
+    text-align: center;
+    margin-top: 10px;
+}
+.container_title p{
+     font-size: 20px;
+     font-weight: bold;
+}
+.container_title>div{
+    width: 100px;
+    height: 1px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+}
+
